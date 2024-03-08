@@ -71,10 +71,10 @@ function checkAccess() {
     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
     const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-    let grantAccess = 'false';
+    let grantAccess = false;
 
     if (addresses.includes(userEmail)) {
-        grantAccess = 'true';
+        grantAccess = true;
     }
 
     if (grantAccess === true) {
@@ -84,6 +84,13 @@ function checkAccess() {
     }
 }
 checkAccess();
+// RISOLUZIONE /////////////
+/*
+1. questa funzione chiede di inserire l'elami all utente, in seguito verifica se l array addresses include l'email inserita, se è vero stampa 'Accesso consentito', altrimenti stampa 'Accesso negato'
+2. errori di sintassi: 
+    - la variabile grantAccess è un valore booleano, quindi false non va messo tra virgolette
+3. 
+*/
 
 
 // ESERCIZIO 5 (suggerimento: c'è un solo errore)
