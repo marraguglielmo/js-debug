@@ -36,9 +36,17 @@ checkAge();
 // ESERCIZIO 2
 function printColorsNumber() {
     const colors = ['blue', 'red', 'yellow', 'green', 'black'];
-    console.log(`Nella mia palette ci sono ${colors.lenght} colori!`);
+    const lunghezzaColors = colors.length;
+    console.log(`Nella mia palette ci sono ${lunghezzaColors} colori!`);
 }
 printColorsNumber();
+// RISOLUZIONE /////////////
+/*
+1. questa funzione stampa in console la lunghezza dell array colors
+2.
+3. gli errore logici sono:
+    -assegno a una costante la lunghezza dell'array colors e nel template literal stampo la costante lunghezzaColors
+*/
 
 
 // ESERCIZIO 3
