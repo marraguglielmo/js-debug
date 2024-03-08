@@ -13,15 +13,25 @@
 // ESERCIZIO 1
 function checkAge() {
     const myAge = 32;
-    const message = '';
+    let message = '';
 
     if (myAge < 18) {
         message = `Sei troppo giovane! Hai ${myAge} anni!`;
     } else {
         message = 'Hai più di 18 anni!';
     }
+    return message;
 }
 checkAge();
+// RISOLUZIONE /////////////
+/*
+1. questa funzione controlla se l'età è minore di 18, se è vero assegna a message una stringa di 'errore', altrimenti gli assegna un messaggio positivo
+2. 
+3. gli errore logici sono:
+    -l'assegnazione const invece di let alla variabile message, perchè in seguito il suo contenuto cambia
+    -manca il return alla fine della funzione che mi restituisce il message
+*/
+
 
 // ESERCIZIO 2
 function printColorsNumber() {
