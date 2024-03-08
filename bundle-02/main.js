@@ -51,12 +51,19 @@ printColorsNumber();
 
 // ESERCIZIO 3
 function addNumbers() {
-    const userNumber = prompt('Inserisci un numero');
+    const userNumber =parseInt(prompt('Inserisci un numero'));
     const total = userNumber + 12;
 
     console.log(`Il risultato finale è ${total}`);
 }
 addNumbers();
+// RISOLUZIONE /////////////
+/*
+1. questa funzione chiede un numero all utente e stampa in total il numero sommato a 12
+2. 
+3. gli errore logici sono:
+    -il prompt mi restituisce una stringa, quindi basta fare il parseInt del prompt ricevuto
+*/
 
 
 // ESERCIZIO 4
