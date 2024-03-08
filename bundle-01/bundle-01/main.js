@@ -9,26 +9,33 @@
 
 *******************************************************************************/
 
-// RISOLUZIONE /////////////
-/*
-1. 
-*/
 
 
 // ESERCIZIO 1
-for (let i = 0; i > 5; i++) {
+for (let i = 0; i < 5; i++) {
     console.log(i);
 }
 
+// RISOLUZIONE /////////////
+/*
+1. questo ciclo for serve a stampare 5 volte il contatore i
+2. l'errore di sintassi è il maggiore al posto del minore
+*/
 
 // ESERCIZIO 2
 function addIfEven(num) {
-    if (num % 2 = 0) {
+    if (num % 2 === 0) {
         return num + 5;
     }
     return num;
 }
-
+addIfEven(4);
+// RISOLUZIONE /////////////
+/*
+1. questa funzione accetta un argomento, in base al numero passato, se questo è pari gli viene sommato 5, altrimenti restituisce il numero inserito
+2. l'errore di sintassi è = invece di ===
+3. l'errore logico è che non è stata richiamata  la funzione
+*/
 
 // ESERCIZIO 3
 function loopToFive() {
