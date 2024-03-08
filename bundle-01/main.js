@@ -39,10 +39,17 @@ addIfEven(4);
 
 // ESERCIZIO 3
 function loopToFive() {
-    for (let i = 0, i < 5, i++) {
+    for (let i = 0; i < 5; i++) {
         console.log(i);
     }
 }
+loopToFive();
+// RISOLUZIONE /////////////
+/*
+1. questa funzione stampa per 5 volte il contatore i
+2. l'errore di sintassi sono le virgole invece dei punti e virgola
+3. l'errore logico è che non è stata richiamata  la funzione
+*/
 
 
 // ESERCIZIO 4 (suggerimento: ci sono 7 errori)
