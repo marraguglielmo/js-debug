@@ -56,7 +56,7 @@ const cars = [
         manufacturer: 'Seat',
         model: 'Ibiza',
         type: 'metano'
-    }
+    },
     {
         manufacturer: 'Audi',
         model: 'R8',
@@ -64,15 +64,11 @@ const cars = [
     },
 ];
 
-const gasolineCars = cars.filter( (auto) >= auto.type === 'benzina');
+const gasolineCars = cars.filter( (auto) => auto.type.toLowerCase() === 'benzina');
 
-const dieselCars = cars.filter( (auto) => {
-    auto.type === 'diesel';
-});
+const dieselCars = cars.filter( (auto) => auto.type.toLowerCase() === 'diesel');
 
-const otherCars = cars.filter( (auto) => {
-    return auto.type !== 'benzina' || auto.type !== 'diesel';
-});
+const otherCars = cars.filter( (auto) => auto.type.toLowerCase() !== 'benzina' && auto.type.toLowerCase() !== 'diesel');
 
 console.log('Auto a benzina');
 console.log('*******************************');
@@ -84,3 +80,14 @@ console.log(dieselCars);
 
 console.log('Tutte le altre auto');
 console.log(otherCars);
+
+// RISOLUZIONE /////////////
+/*
+1. questo codice è composto da un array di oggetti che rappresentano delle macchine. Viene messo un filtro per avere 3 array, ognuno contenente il tipo di macchina
+2. errori di sintassi: 
+    - a riga 59 manca una virgola che separa gli oggetti
+    - nella prima arrow function il maggiore uguale è scritto al contrario
+3. errori di logica:
+    - essendoci alcune stringe con maiuscole e altre con minuscole, manca il metodo toLowerCase() nell arrow function
+    - nella condizione nell ultimo filtro, invede di or va messo and, altrimenti prende tutte le macchine
+*/

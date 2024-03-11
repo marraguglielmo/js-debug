@@ -36,8 +36,7 @@ checkAge();
 // ESERCIZIO 2
 function printColorsNumber() {
     const colors = ['blue', 'red', 'yellow', 'green', 'black'];
-    const lunghezzaColors = colors.length;
-    console.log(`Nella mia palette ci sono ${lunghezzaColors} colori!`);
+    console.log(`Nella mia palette ci sono ${colors.length} colori!`);
 }
 printColorsNumber();
 // RISOLUZIONE /////////////
@@ -99,7 +98,7 @@ function checkAccessImproved() {
 
     const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-    let grantAccess = 'false';
+    let grantAccess = false;
 
     for (let i = 0; i < addresses.length; i++) {
         const email = addresses[i];
@@ -107,7 +106,7 @@ function checkAccessImproved() {
         if (userEmail.length > 5) {
 
             if (email === userEmail) {
-                grantAccess = 'true';
+                grantAccess = true;
 
             }
 
@@ -119,11 +118,17 @@ function checkAccessImproved() {
             console.log('Accesso negato!');
         }
     }
-    checkAccessImproved();
-
-
-
-
+    
+}
+checkAccessImproved();
+// RISOLUZIONE /////////////
+/*
+1. questa funzione chiede di inserire l' all utente, in seguito cicla l array delle email nel database e 
+2. errori di sintassi: 
+    - manca la parentesi graffa che chiude la funzione
+    - i booleani sono messi tra parentesi
+3. 
+*/
 
 
 
